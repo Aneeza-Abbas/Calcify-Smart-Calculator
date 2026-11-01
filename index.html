@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcify | Smart Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+        <div class="logo">
+          <span class="logo-icon">C</span>
+          <div>
+            <h1>Calcify</h1>
+            <p>SMART CALCULATOR</p>
+          </div>
+        </div>
+        <span class="status">● ONLINE</span>
+      </header>
+
+      <section class="calculator">
+        <div class="display">
+          <div id="expression" class="expression"></div>
+          <div id="display" class="result">0</div>
+          <div id="displayNote" class="display-note">Ready to calculate</div>
+        </div>
+
+        <div class="keypad">
+          <button class="key utility" data-action="clear">AC</button>
+          <button class="key utility" data-action="delete">DEL</button>
+          <button class="key utility" data-action="percent">%</button>
+          <button class="key operator" data-value="/">÷</button>
+
+          <button class="key" data-value="7">7</button>
+          <button class="key" data-value="8">8</button>
+          <button class="key" data-value="9">9</button>
+          <button class="key operator" data-value="*">×</button>
+
+          <button class="key" data-value="4">4</button>
+          <button class="key" data-value="5">5</button>
+          <button class="key" data-value="6">6</button>
+          <button class="key operator" data-value="-">−</button>
+
+          <button class="key" data-value="1">1</button>
+          <button class="key" data-value="2">2</button>
+          <button class="key" data-value="3">3</button>
+          <button class="key operator" data-value="+">+</button>
+
+          <button class="key utility" data-action="sign">+/−</button>
+          <button class="key" data-value="0">0</button>
+          <button class="key" data-value=".">.</button>
+          <button class="key equals" data-action="calculate">=</button>
+        </div>
+      </section>
+
+      <aside class="history">
+        <div class="history-heading">
+          <h2>Calculation History</h2>
+          <button id="clearHistory">Clear</button>
+        </div>
+        <div id="historyList" class="history-list">
+          <p class="empty-history">Your calculations will appear here.</p>
+        </div>
+      </aside>
+
+      <footer>
+        <p>Calcify © 2026 · Calculate with confidence.</p>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
